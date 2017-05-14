@@ -1,0 +1,52 @@
+section.testimonials {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  z-index: 999;
+  div.block {
+    div.img-item {
+      width: 81px;
+      height: 81px;
+      display: inline-block;
+      border-radius: 50%;
+      background: url('../img/American-Hero-Neil-Armstrong.jpg')no-repeat center;
+    }
+    div.info-reviews {
+      position:relative;
+      display: inline-block;
+      border: 2px solid #e0e0e0;
+      border-radius: 5px;
+      padding: 20px;
+      margin: 20px;
+      span {font: 400 1.8rem 'Montserrat';}
+      p {font: 200 1.4rem 'Montserrat'; display: inline;}
+      h6 {margin-top: 20px}
+    }
+    div.info-reviews:after {
+      content: '';
+      position:absolute;
+      top:-17px;
+      left:45px;
+      background: url('../img/line-r.png') no-repeat;
+      width:17px;
+      height:17px;
+      transform: rotate(90deg);
+    }
+  }
+}
+/*----------MEDIA TABLET TESTIMONIALS-------------------------------------------------------------------------------------*/
+@media screen and (min-width: 768px) {
+  section.testimonials {
+    div.block {
+      div.info-reviews {
+        width: 500px;
+        height: 179px;
+      }
+      div.info-reviews:after {
+        top: 45px;
+        left: -17px;
+        transform: rotate(0deg);
+      }
+    }
+  }
+}

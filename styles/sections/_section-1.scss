@@ -1,0 +1,14 @@
+section.photohop {
+  background-color: #e7eef6;
+  text-align: center;
+  padding: 30px 0 35px 0;
+  div.img-item {
+    width: 105px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+  }
+  div.block:nth-child(1) div.img-item {background: url('../img/Print.png')no-repeat 0 0;}
+  div.block:nth-child(2) div.img-item {background: url('../img/Print.png')no-repeat -378px 0;}
+  div.block:nth-child(3) div.img-item {background: url('../img/Print.png')no-repeat -735px 0;}
+}

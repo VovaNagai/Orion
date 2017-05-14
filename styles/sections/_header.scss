@@ -1,0 +1,186 @@
+//---------------------------------------------SLIDER-------------------------------------------------------------------
+//button.slick-prev.slick-arrow, button.slick-next.slick-arrow {
+//  display: none !important;
+//}
+#carousel-example-generic {
+  img {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+/*-------------------------------------------------------------------NAVBAR-----------------------------------------*/
+header {
+  span.glyphicon.glyphicon-chevron-right, span.glyphicon.glyphicon-chevron-left {display: none;}
+  nav.navbar {
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+  }
+  a.navbar-brand {
+    position: absolute;
+    height: auto;
+    left: 0;
+  }
+  .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {margin-left: 0;}
+  div#bs-example-navbar-collapse-1.collapse.navbar-collapse, div#bs-example-navbar-collapse-1.navbar-collapse.collapse.in {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  nav.navbar.navbar-default {
+    width: 100vw;
+    position: absolute;
+    background: transparent;
+    border: none;
+    right: 0;
+
+  }
+  ul.nav {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.8);
+    padding: 30px 0;
+    margin: 0;
+  }
+  ul.nav li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: bold 1.4rem 'Montserrat';
+    line-height: 30px;
+  }
+  ul.nav li a:hover {
+    color: #1A64DB;
+  }
+  ul.nav li input {
+    width: 160px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb( 52, 152, 219 );
+    color: #fff;
+    font: bold 1.4rem 'Montserrat';
+  }
+  ul.nav li input:active {
+    background-color: #1A64DB;
+    color: #000;
+  }
+  //------------------------ info slider
+  .info-carousel-my {display: block; text-align: center; padding-top: 10vh;}
+  .info-carousel-my img {width: 60px; height: 60px; margin: 0 auto;}
+  p.slide-txt {font: 300 1.6rem 'Open Sans'; color: #fff;}
+  .link-group {
+    display: flex;
+    position: relative;
+    height: 60px;
+    width: 240px;
+    margin: 2rem auto 0 auto;
+
+    a:first-child, a:last-child {
+      width: 120px;
+      height: 60px;
+      background-color: #59a3fc;
+      color: #fff;
+      padding-top: 19px;
+      text-decoration: none;
+    }
+    a:first-child {
+      padding-right: 15px;
+      border-radius: 5px 0 0 5px;
+    }
+    a:last-child {
+      padding-left: 15px;
+      border-radius: 0 5px 5px 0;
+      background-color: #3d92f9;
+    }
+    p.circle {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #0078b2;
+      color: #fff;
+      text-align: center;
+      margin: 0;
+      position: absolute;
+      left: 105px;
+      top: 15px;
+      padding-top: 3px;
+    }
+  }
+
+}
+
+/*----------MEDIA TABLET NAVBAR-------------------------------------------------------------------------------------*/
+@media screen and (min-width: 768px) {
+  header {
+    div.container-fluid {
+      padding: 0;
+      margin: 0;
+    }
+    div#bs-example-navbar-collapse-1.collapse.navbar-collapse {
+      margin: auto 0;
+    }
+    ul.nav {
+      width: 57vw;
+      float: right;
+      background-color: transparent;
+      padding: 0;
+      margin: 0;
+    }
+    a.navbar-brand {
+      position: relative;
+      height: auto;
+      left: 0;
+    }
+    a.navbar-brand img {
+      display: inline-block;
+      padding-left: 0;
+    }
+    form {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    ul.nav li {
+      display: inline-block;
+      padding: 15px 15px 0 15px;
+    }
+    ul.nav li input {
+      width: 76px;
+
+    }
+    ul.nav li:last-child {
+      padding: auto 0;
+    }
+    div.info-carousel-my
+    {margin-top: 25vh;}
+  }
+}
+/*----------MEDIA DESKTOP NAVBAR-------------------------------------------------------------------------------------*/
+@media screen and (min-width: 990px) {
+  header {
+    ul.nav {width: 100%;}
+    div#bs-example-navbar-collapse-1.collapse.navbar-collapse {
+      width: 100%;
+    }
+    nav.navbar.navbar-default {
+      right: 0;
+    }
+    div.container-fluid {
+      display: flex;
+    }
+
+    a.navbar-brand {
+      padding: 15px 0;
+    }
+    form {
+      justify-content: flex-end;
+    }
+  }
+}
+/*----------MEDIA LG NAVBAR-------------------------------------------------------------------------------------*/
+@media screen and (min-width: 1100px) {
+  header {
+    div.container {position: relative;}
+  }
+}

@@ -1,0 +1,103 @@
+section.our-work {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  button.slick-prev.slick-arrow, button.slick-next.slick-arrow {
+    display: inline-block;
+  }
+}
+/*-------------------------------------------------------SECTION OUR WORK-------------------------------------------*/
+section.our-work {
+  text-align: center;
+  padding-top: 30px;
+  background-color: #e7eef6;
+  div.carousel-inner div.item img {
+    width: 100%;
+    height: 220px;
+  }
+  div.box {
+    margin-top: 25px;
+  }
+  button.button-info-slide {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.651;
+    position: absolute;
+    width: 120px;
+    height: 34px;
+    z-index: 74;
+    border: none;
+    left: -15%;
+    top: 35%
+  }
+  .box-bottom {
+    margin-bottom: 15px;
+  }
+  div.button-slide-left {
+    display: none;
+  }
+  div.button-slide-right {
+    display: none;
+  }
+  .box-top-important {
+    margin-top: 30px;
+  }
+}
+
+/*-----------------------------------------------------------OUR WORK SECTION MEDIA TABLET*/
+
+@media screen and (min-width: 768px) {
+  section.our-work {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    a.left.carousel-control {
+      display: none;
+    }
+    a.right.carousel-control {
+      display: none;
+    }
+    .box-top-important {
+      margin-top: 0;
+    }
+    div.button-slide-left {
+      display: inline-block;
+    }
+    div.button-slide-right {
+      display: inline-block;
+    }
+    div.glyphicon.glyphicon-download, div.glyphicon.glyphicon-upload {
+      width: 40px;
+      height: 40px;
+      font-size: 40px;
+      transform: rotate(90deg);
+    }
+    .box-right {
+      text-align: right;
+      padding-right: 45px;
+      margin-top:20px;
+    }
+  }
+}
+/*-----------------------------------------------------------OUR WORK SECTION MEDIA DESKTOP*/
+
+@media screen and (min-width: 1024px) {
+  section.our-work {
+    padding-top: 85px;
+    padding-bottom: 65px;
+    div.glyphicon.glyphicon-download, div.glyphicon.glyphicon-upload {
+      width: 22px;
+      height: 22px;
+      font-size: 22px;
+    }
+    div.wraper-our-work {
+      padding-left: 145px;
+      padding-right: 145px;
+    }
+    button.button-info-slide {
+      bottom: 0;
+      left: -25%;
+    }
+    .box-right {
+      text-align: right;
+      padding-right: 15px;
+    }
+  }
+}
